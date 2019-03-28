@@ -303,11 +303,11 @@
             <p>virtualbox manager settings-&gt; network -&gt; adapter1-&gt; advanced -&gt; port forwarding<br><img src="/2019/03/28/SSH-to-your-virtual-box/ssh_to_vb.png" alt="ssh_to_vb"></p>
 <p>Host IP: your windows ip<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">win+r cmd</span><br><span class="line">ipconfig</span><br></pre></td></tr></table></figure></p>
 <p>host port: your windows port<br>guest ip: your vm ip default 10.0.2.15<br>guest port: your vm port default 22</p>
+<p>create root:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo passwd root</span><br></pre></td></tr></table></figure></p>
+<p>access root<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">su root</span><br></pre></td></tr></table></figure></p>
 <p>ubuntu OS you should install openssh-server and openssh-client<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt-get install openssh-server</span><br><span class="line">apt-get install openssh-client</span><br></pre></td></tr></table></figure></p>
 <p>now you can use your local MobaXterm SSH to you VM</p>
 <p><strong>tips:</strong><br>ubunto OS can not use root to SSH your VM directly,<br>you should use user name to SSH your VM and su root.<br>centos can use root to SSH your VM directly.</p>
-<p>create root:<br>sudo passwd root</p>
-<p>access root<br>su root</p>
 
           
         
