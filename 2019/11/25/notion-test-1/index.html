@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="install kubernetes install dockerhttps://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-repository install kubernetes123$ git clone https://github.com/kubernetes/kubernetes$ cd kube">
+<meta name="description" content="k8sCreated: Nov 22, 2019 4:38 PMTags: learningUpdated: Nov 25, 2019 2:48 PM export http_proxy=http://www-proxy.ericsson.se:8080 export https_proxy=http://www-proxy.ericsson.se:8080 安装docker 安装go https">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Kubernetes">
-<meta property="og:url" content="http://loganma.com/2019/03/27/Kubernetes/index.html">
+<meta property="og:title" content="Logan">
+<meta property="og:url" content="http://loganma.com/2019/11/25/notion-test-1/index.html">
 <meta property="og:site_name" content="Logan">
-<meta property="og:description" content="install kubernetes install dockerhttps://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-repository install kubernetes123$ git clone https://github.com/kubernetes/kubernetes$ cd kube">
+<meta property="og:description" content="k8sCreated: Nov 22, 2019 4:38 PMTags: learningUpdated: Nov 25, 2019 2:48 PM export http_proxy=http://www-proxy.ericsson.se:8080 export https_proxy=http://www-proxy.ericsson.se:8080 安装docker 安装go https">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-27T07:43:50.040Z">
+<meta property="og:updated_time" content="2019-11-25T10:07:21.542Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Kubernetes">
-<meta name="twitter:description" content="install kubernetes install dockerhttps://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-repository install kubernetes123$ git clone https://github.com/kubernetes/kubernetes$ cd kube">
+<meta name="twitter:title" content="Logan">
+<meta name="twitter:description" content="k8sCreated: Nov 22, 2019 4:38 PMTags: learningUpdated: Nov 25, 2019 2:48 PM export http_proxy=http://www-proxy.ericsson.se:8080 export https_proxy=http://www-proxy.ericsson.se:8080 安装docker 安装go https">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://loganma.com/2019/03/27/Kubernetes/">
+  <link rel="canonical" href="http://loganma.com/2019/11/25/notion-test-1/">
 
 
 
 
 
-  <title>Kubernetes | Logan</title>
+  <title> | Logan</title>
   
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://loganma.com/2019/03/27/Kubernetes/">
+    <link itemprop="mainEntityOfPage" href="http://loganma.com/2019/11/25/notion-test-1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Logan Ma">
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Kubernetes</h1>
+          <h1 class="post-title" itemprop="name headline"></h1>
         
 
         <div class="post-meta">
@@ -261,8 +261,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-27T15:40:37+08:00">
-                2019-03-27
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-25T18:07:51+08:00">
+                2019-11-25
               </time>
             
 
@@ -299,9 +299,36 @@
       
 
       
-        <h3 id="install-kubernetes"><a href="#install-kubernetes" class="headerlink" title="install kubernetes"></a>install kubernetes</h3><hr>
-<h5 id="install-docker"><a href="#install-docker" class="headerlink" title="install docker"></a>install docker</h5><p><a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-repository" target="_blank" rel="noopener">https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-repository</a></p>
-<h5 id="install-kubernetes-1"><a href="#install-kubernetes-1" class="headerlink" title="install kubernetes"></a>install kubernetes</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https://github.com/kubernetes/kubernetes</span><br><span class="line">$ cd kubernetes</span><br><span class="line">$ make quick-release</span><br></pre></td></tr></table></figure>
+        <h1 id="k8s"><a href="#k8s" class="headerlink" title="k8s"></a>k8s</h1><p>Created: Nov 22, 2019 4:38 PM<br>Tags: learning<br>Updated: Nov 25, 2019 2:48 PM</p>
+<p>export http_proxy=<a href="http://www-proxy.ericsson.se:8080/" target="_blank" rel="noopener">http://www-proxy.ericsson.se:8080</a></p>
+<p>export https_proxy=<a href="http://www-proxy.ericsson.se:8080/" target="_blank" rel="noopener">http://www-proxy.ericsson.se:8080</a></p>
+<p>安装docker</p>
+<p>安装go</p>
+<p><a href="https://golang.org/doc/install" target="_blank" rel="noopener">https://golang.org/doc/install</a></p>
+<p>安装kind</p>
+<p><a href="https://github.com/kubernetes-sigs/kind" target="_blank" rel="noopener">https://github.com/kubernetes-sigs/kind</a></p>
+<p>安装kind可能遇见的error</p>
+<pre><code>logan@logan:~$ kind create cluster
+ERROR: failed to list clusters: command &quot;docker ps -q -a --no-trunc --filter label=io.k8s.sigs.kind.cluster=kind --format &apos;{{.Names}}&apos;&quot; failed with error: exit status 1
+</code></pre><p>sudo ll /var/run/docker.sock</p>
+<p>所以现在直接修改<code>/var/run/docker.sock</code>的权限</p>
+<p><code>$ sudo chmod 666 /var/run/docker.sock</code></p>
+<p>现在就可以在非root用户下运行docker了</p>
+<pre><code>logan@logan:/usr/bin$ kind create cluster
+Creating cluster &quot;kind&quot; ...
+ ✓ Ensuring node image (kindest/node:v1.16.3) 🖼 
+ ✓ Preparing nodes 📦 
+ ✓ Writing configuration 📜 
+ ✓ Starting control-plane 🕹️ 
+ ✓ Installing CNI 🔌 
+ ✓ Installing StorageClass 💾 
+Set kubectl context to &quot;kind-kind&quot;
+You can now use your cluster with:
+
+kubectl cluster-info --context kind-kind
+
+Not sure what to do next? 😅 Check out https://kind.sigs.k8s.io/docs/user/quick-start/
+</code></pre>
       
     </div>
     
@@ -325,8 +352,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/19/My-New-Post/" rel="next" title="My First Post">
-                <i class="fa fa-chevron-left"></i> My First Post
+              <a href="/2019/11/25/notion-test/" rel="next" title="notion test">
+                <i class="fa fa-chevron-left"></i> notion test
               </a>
             
           </div>
@@ -334,10 +361,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/03/28/SSH-to-your-virtual-box/" rel="prev" title="SSH to your virtual box">
-                SSH to your virtual box <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -451,7 +474,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#install-kubernetes"><span class="nav-number">1.</span> <span class="nav-text">install kubernetes</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#install-docker"><span class="nav-number">1.0.1.</span> <span class="nav-text">install docker</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#install-kubernetes-1"><span class="nav-number">1.0.2.</span> <span class="nav-text">install kubernetes</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#k8s"><span class="nav-number">1.</span> <span class="nav-text">k8s</span></a></li></ol></div>
             
 
           </div>
