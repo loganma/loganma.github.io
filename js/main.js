@@ -94,3 +94,11 @@
         $('.navbar-main .catalogue').on('click', toggleToc);
     }
 })(jQuery);
+
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?69eac3ce5f29dcc42735c031a9ed4e9d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
