@@ -19,7 +19,7 @@
 <meta property="og:description" content="Ansible 安装使用pip安装 pip，一个python包管理器。如果还没有安装pip，请安装pip。12$ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py$ python get-pip.py --user 安装Ansible 123$ python -m virtualenv py3.7.0  # Create a virtu">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://loganma.com/images/og_image.png">
-<meta property="og:updated_time" content="2020-04-21T07:21:15.789Z">
+<meta property="og:updated_time" content="2020-04-21T07:28:34.891Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ansible基础从安装到运行的第一条命令">
 <meta name="twitter:description" content="Ansible 安装使用pip安装 pip，一个python包管理器。如果还没有安装pip，请安装pip。12$ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py$ python get-pip.py --user 安装Ansible 123$ python -m virtualenv py3.7.0  # Create a virtu">
@@ -115,7 +115,7 @@
                 
                 
                 
-                <a class="navbar-item search" title="Search" href="javascript:;">
+                <a class="navbar-item search" title="Pencarian" href="javascript:;">
                     <i class="fas fa-search"></i>
                 </a>
                 
@@ -144,7 +144,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    4 minutes read (About 641 words)
+                    4 minutes membaca (Sekitar 642 kata)
                 </span>
                 
                 
@@ -163,17 +163,17 @@
 <figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ python -m virtualenv py3.7.0  <span class="hljs-comment"># Create a virtualenv if one does not already exist</span></span><br><span class="line">$ <span class="hljs-built_in">source</span> py3.7.0/bin/activate   <span class="hljs-comment"># Activate the virtual environment</span></span><br><span class="line">$ pip install ansible</span><br></pre></td></tr></table></figure>
 <p><a href="https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html" target="_blank" rel="noopener">更多安装方式参考</a></p>
 <a id="more"></a>
-<h2 id="Ansible一些概念"><a href="#Ansible一些概念" class="headerlink" title="Ansible一些概念"></a>Ansible一些概念</h2><p>###Control node<br>安装了Ansible的机器。你可以运行命令和playbooks。任何一台安装了python的设备除了windows都可以作为 control node。你可以有多个control nodes。</p>
-<p>###Managed node<br>通过Ansible管理的网络设备或者称为服务。Managed node有时候也叫做hosts，Ansible不会安装在managed nodes。</p>
-<p>###Inventory<br>一张managed nodes列表。一个inventory文件有时候也叫做hostfile。你的inventory可以指定每一台managed node的IP地址。</p>
-<p>###Modules<br>Ansible可以执行的最小代码单元。每一个module都有一个特定的用途。你可以使用task调用一个单独的module，也可以使用playbook调用多个modules。</p>
-<p>###Tasks<br>Ansible最小的执行单元。你可以通过 ad-hoc 命令执行单个task。</p>
-<p>###Playbooks<br>有序的tasks列表。保存这你可以顺序反复执行的tasks。playbooks可以像tasks一样存在变量。使用YAML编写。</p>
-<p>##配置Ansible<br><a href="https://docs.ansible.com/ansible/latest/reference_appendices/config.html#ansible-configuration-settings-locations" target="_blank" rel="noopener">配置文档参考​​​​​​​</a></p>
+<h2 id="Ansible一些概念"><a href="#Ansible一些概念" class="headerlink" title="Ansible一些概念"></a>Ansible一些概念</h2><h3 id="Control-node"><a href="#Control-node" class="headerlink" title="Control node"></a>Control node</h3><p>安装了Ansible的机器。你可以运行命令和playbooks。任何一台安装了python的设备除了windows都可以作为 control node。你可以有多个control nodes。</p>
+<h3 id="Managed-node"><a href="#Managed-node" class="headerlink" title="Managed node"></a>Managed node</h3><p>通过Ansible管理的网络设备或者称为服务。Managed node有时候也叫做hosts，Ansible不会安装在managed nodes。</p>
+<h3 id="Inventory"><a href="#Inventory" class="headerlink" title="Inventory"></a>Inventory</h3><p>一张managed nodes列表。一个inventory文件有时候也叫做hostfile。你的inventory可以指定每一台managed node的IP地址。</p>
+<h3 id="Modules"><a href="#Modules" class="headerlink" title="Modules"></a>Modules</h3><p>Ansible可以执行的最小代码单元。每一个module都有一个特定的用途。你可以使用task调用一个单独的module，也可以使用playbook调用多个modules。</p>
+<h3 id="Tasks"><a href="#Tasks" class="headerlink" title="Tasks"></a>Tasks</h3><p>Ansible最小的执行单元。你可以通过 ad-hoc 命令执行单个task。</p>
+<h3 id="Playbooks"><a href="#Playbooks" class="headerlink" title="Playbooks"></a>Playbooks</h3><p>有序的tasks列表。保存这你可以顺序反复执行的tasks。playbooks可以像tasks一样存在变量。使用YAML编写。</p>
+<h2 id="配置Ansible"><a href="#配置Ansible" class="headerlink" title="配置Ansible"></a>配置Ansible</h2><p><a href="https://docs.ansible.com/ansible/latest/reference_appendices/config.html#ansible-configuration-settings-locations" target="_blank" rel="noopener">配置文档参考​​​​​​​</a></p>
 <p>1）ANSIBLE_CONFIG：首先，Ansible命令会检查环境变量，及这个环境变量将指向的配置文件<br>2）./ansible.cfg：其次，将会检查当前目录下的ansible.cfg配置文件<br>3）~/.ansible.cfg：再次，将会检查当前用户home目录下的.ansible.cfg配置文件<br>4）/etc/ansible/ansible.cfg：最后，将会检查在用软件包管理工具安装Ansible时自动产生的配置文件</p>
-<p>###定义~/py3.7.0/ansible/hosts<br><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">localhost</span><br></pre></td></tr></table></figure></p>
-<p>在~/py3.7.0/bin/ 创建ansible.cfg设置默认的hosts文件目录<br>[defaults]<br>inventory = ~/py3.7.0/ansible/hosts<br>host_key_checking = False</p>
-<p>##运行第一个ansible命令<br><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[py3.7.0] -&gt; ansible all -m ping                                                                               <span class="hljs-comment"># ~/py3.7.0/bin</span></span><br><span class="line">localhost | SUCCESS =&gt; &#123;</span><br><span class="line">    <span class="hljs-string">"ansible_facts"</span>: &#123;</span><br><span class="line">        <span class="hljs-string">"discovered_interpreter_python"</span>: <span class="hljs-string">"/usr/bin/python"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="hljs-string">"changed"</span>: <span class="hljs-literal">false</span>,</span><br><span class="line">    <span class="hljs-string">"ping"</span>: <span class="hljs-string">"pong"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="定义-py3-7-0-ansible-hosts"><a href="#定义-py3-7-0-ansible-hosts" class="headerlink" title="定义~/py3.7.0/ansible/hosts"></a>定义~/py3.7.0/ansible/hosts</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">localhost</span><br></pre></td></tr></table></figure>
+<p>在~/py3.7.0/bin/ 创建ansible.cfg设置默认的hosts文件目录<br><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[defaults]</span><br><span class="line">inventory = ~/py3.7.0/ansible/hosts</span><br><span class="line">host_key_checking = False</span><br></pre></td></tr></table></figure></p>
+<h2 id="运行第一个ansible命令"><a href="#运行第一个ansible命令" class="headerlink" title="运行第一个ansible命令"></a>运行第一个ansible命令</h2><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[py3.7.0] -&gt; ansible all -m ping                                                                               <span class="hljs-comment"># ~/py3.7.0/bin</span></span><br><span class="line">localhost | SUCCESS =&gt; &#123;</span><br><span class="line">    <span class="hljs-string">"ansible_facts"</span>: &#123;</span><br><span class="line">        <span class="hljs-string">"discovered_interpreter_python"</span>: <span class="hljs-string">"/usr/bin/python"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="hljs-string">"changed"</span>: <span class="hljs-literal">false</span>,</span><br><span class="line">    <span class="hljs-string">"ping"</span>: <span class="hljs-string">"pong"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[py3.7.0] -&gt; ansible all -a <span class="hljs-string">"/bin/echo Hello Ansible!"</span>                                                         <span class="hljs-comment"># ~/py3.7.0/bin</span></span><br><span class="line">localhost | CHANGED | rc=0 &gt;&gt;</span><br><span class="line">Hello Ansible!</span><br></pre></td></tr></table></figure>
 <p>Tips：<br>默认情况下，Ansible使用SFTP传输文件。如果您要管理的机器或设备不支持SFTP，您可以在配置Ansible时切换到SCP模式<a href="https://docs.ansible.com/ansible/latest/installation_guide/intro_configuration.html#intro-configuration" target="_blank" rel="noopener">Configuring Ansible</a>。</p>
 
@@ -253,7 +253,7 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Posts
+                        Artikel
                     </p>
                     <a href="/archives">
                         <p class="title has-text-weight-normal">
@@ -265,7 +265,7 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Categories
+                        Kategori
                     </p>
                     <a href="/categories">
                         <p class="title has-text-weight-normal">
@@ -277,7 +277,7 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Tags
+                        Tag
                     </p>
                     <a href="/tags">
                         <p class="title has-text-weight-normal">
@@ -290,7 +290,7 @@
         
         <div class="level">
             <a class="level-item button is-link is-rounded" href="https://github.com/loganma" target="_blank">
-                Follow</a>
+                IKUTI</a>
         </div>
         
         
@@ -343,7 +343,7 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Links
+            Tautan
         </h3>
         <ul class="menu-list">
         
@@ -380,7 +380,7 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Categories
+                Kategori
             </h3>
             <ul class="menu-list">
             <li>
@@ -416,7 +416,7 @@
         <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Tag Cloud
+            Awan tag
         </h3>
         <a href="/tags/Ansible/" style="font-size: 10px;">Ansible</a> <a href="/tags/Install/" style="font-size: 10px;">Install</a> <a href="/tags/Kubernetes/" style="font-size: 20px;">Kubernetes</a> <a href="/tags/k8s/" style="font-size: 20px;">k8s</a> <a href="/tags/mango/" style="font-size: 10px;">mango</a> <a href="/tags/mousse/" style="font-size: 10px;">mousse</a> <a href="/tags/virtual-machine/" style="font-size: 10px;">virtual machine</a>
     </div>
@@ -428,7 +428,7 @@
             <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Recent
+            Terbaru
         </h3>
         
         <article class="media">
@@ -533,7 +533,7 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Archives
+            Arsip
         </h3>
         <ul class="menu-list">
         
@@ -590,7 +590,7 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Tags
+                Tag
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
@@ -662,7 +662,7 @@
         <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Recent
+            Terbaru
         </h3>
         
         <article class="media">
@@ -767,7 +767,7 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Archives
+            Arsip
         </h3>
         <ul class="menu-list">
         
@@ -824,7 +824,7 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Tags
+                Tag
             </h3>
             <div class="field is-grouped is-grouped-multiline">
                 
@@ -1012,7 +1012,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
     
     
-<a id="back-to-top" title="Back to Top" href="javascript:;">
+<a id="back-to-top" title="Kembali ke atas" href="javascript:;">
     <i class="fas fa-chevron-up"></i>
 </a>
 <script src="/js/back-to-top.js" defer></script>
@@ -1036,7 +1036,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class="searchbox ins-search">
     <div class="searchbox-container ins-search-container">
         <div class="searchbox-input-wrapper">
-            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something..." />
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Tulis Sesuatu.." />
             <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="searchbox-result-wrapper ins-section-wrapper">
@@ -1048,11 +1048,11 @@ document.addEventListener('DOMContentLoaded', function () {
     (function (window) {
         var INSIGHT_CONFIG = {
             TRANSLATION: {
-                POSTS: 'Posts',
-                PAGES: 'Pages',
-                CATEGORIES: 'Categories',
-                TAGS: 'Tags',
-                UNTITLED: '(Untitled)',
+                POSTS: 'Artikel',
+                PAGES: 'Halaman',
+                CATEGORIES: 'Kategori',
+                TAGS: 'Tag',
+                UNTITLED: 'Tanpa Judul',
             },
             CONTENT_URL: '/content.json',
         };
