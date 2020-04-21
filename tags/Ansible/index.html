@@ -7,12 +7,12 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>Category: Kubernetes - Logan</title>
+<title>Tag: Ansible - Logan</title>
 
 
     <meta property="og:type" content="website">
 <meta property="og:title" content="Logan">
-<meta property="og:url" content="http://loganma.com/categories/Kubernetes/index.html">
+<meta property="og:url" content="http://loganma.com/tags/Ansible/index.html">
 <meta property="og:site_name" content="Logan">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://loganma.com/images/og_image.png">
@@ -126,9 +126,8 @@
     <div class="card-content">
         <nav class="breadcrumb" aria-label="breadcrumbs">
         <ul>
-            <li><a href="/categories">Categories</a></li>
-            
-            <li class="is-active"><a href="#" aria-current="page">Kubernetes</a></li>
+            <li><a href="/tags">Tags</a></li>
+            <li class="is-active"><a href="#" aria-current="page">Ansible</a></li>
         </ul>
         </nav>
     </div>
@@ -141,17 +140,17 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-12T07:27:31.000Z">2019-04-12</time>
+                <time class="level-item has-text-grey" datetime="2020-04-21T07:03:49.000Z">2020-04-21</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Kubernetes/">Kubernetes</a>
+                <a class="has-link-grey -link" href="/categories/Ansible/">Ansible</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    3 minutes read (About 376 words)
+                    4 minutes read (About 623 words)
                 </span>
                 
                 
@@ -160,69 +159,25 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/Install-Kubernetes-ON-CentOS-7/">Install Kubernetes ON CentOS 7</a>
+                <a class="has-link-black-ter" href="/Ansible基础从安装到运行的第一条命令/">Ansible基础从安装到运行的第一条命令</a>
             
         </h1>
         <div class="content">
-            <p>关闭防火墙服务<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl disable firewalld</span><br><span class="line">systemctl stop firewalld</span><br></pre></td></tr></table></figure></p>
-<p>建议禁止SELinux, 目的是让容器可以读取主机文件系统<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">setenforce 0</span><br></pre></td></tr></table></figure></p>
+            <p>Ansible 安装<br>使用pip安装</p>
+<p>pip，一个python包管理器。如果还没有安装pip，请安装pip。<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py</span><br><span class="line">$ python get-pip.py --user</span><br></pre></td></tr></table></figure></p>
+<p>安装Ansible</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ python -m virtualenv py3.7.0  # Create a virtualenv if one does not already exist</span><br><span class="line">$ source py3.7.0/bin/activate   # Activate the virtual environment</span><br><span class="line">$ pip install ansible</span><br></pre></td></tr></table></figure>
+<p><a href="https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html" target="_blank" rel="noopener">更多安装方式参考</a></p>
         </div>
         
         
         <div class="level is-mobile">
             <div class="level-start">
                 <div class="level-item">
-                <a class="button is-size-7 is-light" href="/Install-Kubernetes-ON-CentOS-7/#more">Read More</a>
+                <a class="button is-size-7 is-light" href="/Ansible基础从安装到运行的第一条命令/#more">Read More</a>
                 </div>
             </div>
         </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-03-27T07:40:37.000Z">2019-03-27</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Kubernetes/">Kubernetes</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    a few seconds read (About 44 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/Kubernetes/">Kubernetes</a>
-            
-        </h1>
-        <div class="content">
-            <h3 id="install-kubernetes"><a href="#install-kubernetes" class="headerlink" title="install kubernetes"></a>install kubernetes</h3><hr>
-<h5 id="install-docker"><a href="#install-docker" class="headerlink" title="install docker"></a>install docker</h5><p><a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-repository" target="_blank" rel="noopener">https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-repository</a></p>
-<h5 id="install-kubernetes-1"><a href="#install-kubernetes-1" class="headerlink" title="install kubernetes"></a>install kubernetes</h5><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https://github.com/kubernetes/kubernetes</span><br><span class="line">$ cd kubernetes</span><br><span class="line">$ make quick-release</span><br></pre></td></tr></table></figure>
-        </div>
-        
         
         
     </div>

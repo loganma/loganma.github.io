@@ -7,17 +7,22 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>Category: Kubernetes - Logan</title>
+<title>Ansible基础从安装到运行的第一条命令 - Logan</title>
 
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Logan">
-<meta property="og:url" content="http://loganma.com/categories/Kubernetes/index.html">
+    <meta name="description" content="Ansible 安装使用pip安装 pip，一个python包管理器。如果还没有安装pip，请安装pip。12$ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py$ python get-pip.py --user 安装Ansible 123$ python -m virtualenv py3.7.0  # Create a virtu">
+<meta name="keywords" content="Ansible">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ansible基础从安装到运行的第一条命令">
+<meta property="og:url" content="http://loganma.com/Ansible基础从安装到运行的第一条命令/index.html">
 <meta property="og:site_name" content="Logan">
+<meta property="og:description" content="Ansible 安装使用pip安装 pip，一个python包管理器。如果还没有安装pip，请安装pip。12$ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py$ python get-pip.py --user 安装Ansible 123$ python -m virtualenv py3.7.0  # Create a virtu">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://loganma.com/images/og_image.png">
+<meta property="og:updated_time" content="2020-04-21T07:13:11.255Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Logan">
+<meta name="twitter:title" content="Ansible基础从安装到运行的第一条命令">
+<meta name="twitter:description" content="Ansible 安装使用pip安装 pip，一个python包管理器。如果还没有安装pip，请安装pip。12$ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py$ python get-pip.py --user 安装Ansible 123$ python -m virtualenv py3.7.0  # Create a virtu">
 <meta name="twitter:image" content="http://loganma.com/images/og_image.png">
 
 
@@ -76,7 +81,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="Logan" height="28">
+                <img src="/images/logo.svg" alt="Ansible基础从安装到运行的第一条命令" height="28">
             
             </a>
         </div>
@@ -122,36 +127,24 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
-    <div class="card-content">
-        <nav class="breadcrumb" aria-label="breadcrumbs">
-        <ul>
-            <li><a href="/categories">Categories</a></li>
-            
-            <li class="is-active"><a href="#" aria-current="page">Kubernetes</a></li>
-        </ul>
-        </nav>
-    </div>
-</div>
-
-    
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
 <div class="card">
     
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-12T07:27:31.000Z">2019-04-12</time>
+                <time class="level-item has-text-grey" datetime="2020-04-21T07:03:49.000Z">2020-04-21</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Kubernetes/">Kubernetes</a>
+                <a class="has-link-grey -link" href="/categories/Ansible/">Ansible</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    3 minutes read (About 376 words)
+                    4 minutes read (About 623 words)
                 </span>
                 
                 
@@ -160,67 +153,37 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/Install-Kubernetes-ON-CentOS-7/">Install Kubernetes ON CentOS 7</a>
+                Ansible基础从安装到运行的第一条命令
             
         </h1>
         <div class="content">
-            <p>关闭防火墙服务<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl disable firewalld</span><br><span class="line">systemctl stop firewalld</span><br></pre></td></tr></table></figure></p>
-<p>建议禁止SELinux, 目的是让容器可以读取主机文件系统<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">setenforce 0</span><br></pre></td></tr></table></figure></p>
+            <p>Ansible 安装<br>使用pip安装</p>
+<p>pip，一个python包管理器。如果还没有安装pip，请安装pip。<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py</span><br><span class="line">$ python get-pip.py --user</span><br></pre></td></tr></table></figure></p>
+<p>安装Ansible</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ python -m virtualenv py3.7.0  # Create a virtualenv if one does not already exist</span><br><span class="line">$ source py3.7.0/bin/activate   # Activate the virtual environment</span><br><span class="line">$ pip install ansible</span><br></pre></td></tr></table></figure>
+<p><a href="https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html" target="_blank" rel="noopener">更多安装方式参考</a></p>
+<a id="more"></a>
+<p>Ansible一些概念<br>Control node<br>安装了Ansible的机器。你可以运行命令和playbooks。任何一台安装了python的设备除了windows都可以作为 control node。你可以有多个control nodes。</p>
+<p>Managed node<br>通过Ansible管理的网络设备或者称为服务。Managed node有时候也叫做hosts，Ansible不会安装在managed nodes。</p>
+<p>Inventory<br>一张managed nodes列表。一个inventory文件有时候也叫做hostfile。你的inventory可以指定每一台managed node的IP地址。</p>
+<p>Modules<br>Ansible可以执行的最小代码单元。每一个module都有一个特定的用途。你可以使用task调用一个单独的module，也可以使用playbook调用多个modules。</p>
+<p>Tasks<br>Ansible最小的执行单元。你可以通过 ad-hoc 命令执行单个task。</p>
+<p>Playbooks<br>有序的tasks列表。保存这你可以顺序反复执行的tasks。playbooks可以像tasks一样存在变量。使用YAML编写。</p>
+<p>配置Ansible<br><a href="https://docs.ansible.com/ansible/latest/reference_appendices/config.html#ansible-configuration-settings-locations" target="_blank" rel="noopener">配置文档参考​​​​​​​</a></p>
+<p>1）ANSIBLE_CONFIG：首先，Ansible命令会检查环境变量，及这个环境变量将指向的配置文件<br>2）./ansible.cfg：其次，将会检查当前目录下的ansible.cfg配置文件<br>3）~/.ansible.cfg：再次，将会检查当前用户home目录下的.ansible.cfg配置文件<br>4）/etc/ansible/ansible.cfg：最后，将会检查在用软件包管理工具安装Ansible时自动产生的配置文件<br>定义~/py3.7.0/ansible/hosts<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">localhost</span><br></pre></td></tr></table></figure></p>
+<p>在~/py3.7.0/bin/ 创建ansible.cfg设置默认的hosts文件目录<br>[defaults]<br>inventory = ~/py3.7.0/ansible/hosts<br>host_key_checking = False<br>运行第一个ansible命令<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[py3.7.0] -&gt; ansible all -m ping                                                                               # ~/py3.7.0/bin</span><br><span class="line">localhost | SUCCESS =&gt; &#123;</span><br><span class="line">    &quot;ansible_facts&quot;: &#123;</span><br><span class="line">        &quot;discovered_interpreter_python&quot;: &quot;/usr/bin/python&quot;</span><br><span class="line">    &#125;,</span><br><span class="line">    &quot;changed&quot;: false,</span><br><span class="line">    &quot;ping&quot;: &quot;pong&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[py3.7.0] -&gt; ansible all -a &quot;/bin/echo Hello Ansible!&quot;                                                         # ~/py3.7.0/bin</span><br><span class="line">localhost | CHANGED | rc=0 &gt;&gt;</span><br><span class="line">Hello Ansible!</span><br></pre></td></tr></table></figure>
+<p>Tips：<br>默认情况下，Ansible使用SFTP传输文件。如果您要管理的机器或设备不支持SFTP，您可以在配置Ansible时切换到SCP模式Configuring Ansible。</p>
+
         </div>
         
-        
-        <div class="level is-mobile">
+        <div class="level is-size-7 is-uppercase">
             <div class="level-start">
                 <div class="level-item">
-                <a class="button is-size-7 is-light" href="/Install-Kubernetes-ON-CentOS-7/#more">Read More</a>
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/Ansible/">Ansible</a>
                 </div>
             </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-03-27T07:40:37.000Z">2019-03-27</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Kubernetes/">Kubernetes</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    a few seconds read (About 44 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/Kubernetes/">Kubernetes</a>
-            
-        </h1>
-        <div class="content">
-            <h3 id="install-kubernetes"><a href="#install-kubernetes" class="headerlink" title="install kubernetes"></a>install kubernetes</h3><hr>
-<h5 id="install-docker"><a href="#install-docker" class="headerlink" title="install docker"></a>install docker</h5><p><a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-repository" target="_blank" rel="noopener">https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-repository</a></p>
-<h5 id="install-kubernetes-1"><a href="#install-kubernetes-1" class="headerlink" title="install kubernetes"></a>install kubernetes</h5><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https://github.com/kubernetes/kubernetes</span><br><span class="line">$ cd kubernetes</span><br><span class="line">$ make quick-release</span><br></pre></td></tr></table></figure>
         </div>
         
         
@@ -232,7 +195,19 @@
 
 
 
-
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/mango-mousse/">
+                <span class="level-item">芒果慕斯杯</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
 
 
 </div>
@@ -917,7 +892,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="Logan" height="28">
+                    <img src="/images/logo.svg" alt="Ansible基础从安装到运行的第一条命令" height="28">
                 
                 </a>
                 <p class="is-size-7">
